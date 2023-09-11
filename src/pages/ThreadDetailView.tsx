@@ -23,6 +23,7 @@ const ThreadDetailView = () => {
       
     <div className='post' id='post' key={post.id}>  
                 <p>Product Name: {post.title}</p>
+                <p>Price: {post.price}</p>
                 <p>Description: {post.description}</p>
                 {/* <p>Category: {post.category}</p> */}
                 {/* <p>Creation Date: {post.creationDate}</p> */}

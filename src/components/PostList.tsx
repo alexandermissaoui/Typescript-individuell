@@ -15,7 +15,8 @@ const PostList = () => {
               <div key={post.id} className="post" id="post" onClick={() =>{
                 navigate(`/post/${post.id}`)
                 }}>
-                <p>Product Name: {post.title}</p>
+                <p>Title: {post.title}</p>
+                <p>Price: {post.price}</p>
                 {/* <p>Description: {post.description}</p> */}
                 {/* <p>Product Image: {post.image}</p> */}
                 {/* <p>Creation Date: {post.creationDate}</p> */}
