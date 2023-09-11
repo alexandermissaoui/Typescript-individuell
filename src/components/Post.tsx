@@ -73,25 +73,25 @@ const Post: React.FC = () => {
         <h1>Create Post</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Name:</label>
-          <input
+          {/* <label htmlFor="name">Name:</label> */}
+          {/* <input
             id="name"
             name="name"
             value={newPost.creator.name}
             onChange={handleInputChange}
-          />
+          /> */}
         </div>
         <div>
-          <label htmlFor="userName">Username:</label>
+          {/* <label htmlFor="userName">Username:</label>
           <input
             id="userName"
             name="userName"
             value={newPost.creator.userName}
             onChange={handleInputChange}
-          />
+          /> */}
         </div>
         <div>
-          <label htmlFor="title">Title:</label>
+          <label htmlFor="title">Product Name:</label>
           <input
             type="text"
             id="title"
@@ -101,21 +101,21 @@ const Post: React.FC = () => {
           />
         </div>
         <div className='radio-btn'>
-        <input type="radio" title='thread' id="THREAD" name="category" value="THREAD" checked={newPost.category === "THREAD"} onChange={handleInputChange} />
-        <label htmlFor="thread">THREAD</label><br />
+        {/* <input type="radio" title='thread' id="THREAD" name="category" value="THREAD" checked={newPost.category === "THREAD"} onChange={handleInputChange} />
+        <label htmlFor="thread">THREAD</label><br /> */}
 
-        <input type="radio" title='qna' id="QNA" name="category" value="QNA" checked={newPost.category === "QNA"} onChange={handleInputChange} />
-        <label htmlFor="qna">QNA</label><br />
+        {/* <input type="radio" title='qna' id="QNA" name="category" value="QNA" checked={newPost.category === "QNA"} onChange={handleInputChange} />
+        <label htmlFor="qna">QNA</label><br /> */}
 
         </div>
         <div>
-          <label htmlFor="creationDate">Created at:</label>
-          <input
+          {/* <label htmlFor="creationDate">Created at:</label> */}
+          {/* <input
             id="creationDate"
             name="creationDate"
             value={newPost.creationDate}
             onChange={handleInputChange}
-          />
+          /> */}
         </div>
         <div>
           <label htmlFor="description">Description:</label>
@@ -127,7 +127,7 @@ const Post: React.FC = () => {
           />
         
         </div>
-        <button id='cr8btn' type="submit">Create Post</button>
+        <button id='cr8btn' type="submit">Create Product</button>
       </form>
     </div>
       

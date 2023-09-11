@@ -14,10 +14,3 @@ interface QNAPost extends PostData {
   isAnswered: boolean;
   commentAnswerId?: number;
 }
-
-interface PostComment {
-  id: number;
-  thread: number;
-  content: string;
-  creator: User;
-}

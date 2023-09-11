@@ -1,10 +1,5 @@
-// PostDetail.tsx
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import CommentList from '../components/CommentList';
-// import { posts } from './data';
-
-
 
 const ThreadDetailView = () => {
   const {id}=useParams()
@@ -35,7 +30,6 @@ const ThreadDetailView = () => {
                 <p>Username: {post.creator.userName}</p>
     </div>
 
-    <CommentList/>
     </div>
 
   );
