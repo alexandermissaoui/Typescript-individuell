@@ -16,8 +16,8 @@ const PostList = () => {
                 navigate(`/post/${post.id}`)
                 }}>
                 <p>Product Name: {post.title}</p>
-                <p>Description: {post.description}</p>
-                {/* <p>Category: {post.category}</p> */}
+                {/* <p>Description: {post.description}</p> */}
+                {/* <p>Product Image: {post.image}</p> */}
                 {/* <p>Creation Date: {post.creationDate}</p> */}
                 {/* <p>Creator name: {post.creator.name}</p> */}
                 {/* <p>Username: {post.creator.userName}</p> */}
