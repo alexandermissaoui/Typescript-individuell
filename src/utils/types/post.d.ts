@@ -29,9 +29,3 @@ interface Action {
   type: string;
   payload?: any;
 }
-
-// interface QNAPost extends PostData {
-//   category: "QNA";
-//   isAnswered: boolean;
-//   commentAnswerId?: number;
-// }
