@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,7 +7,7 @@ const Post: React.FC = () => {
   const [newPost, setNewPost] = useState<PostData>({
     id: 0,
     title: '',
-    price: '',
+    price:'',
     category: 'THREAD',
     creationDate: '',
     description: '',
@@ -29,10 +28,6 @@ const Post: React.FC = () => {
     setNewPost({
       ...newPost,
       [name]: value,
-      creator: {
-        ...newPost.creator,
-        [name]: value,
-      },
     });
   };
 
@@ -40,7 +35,7 @@ const Post: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault(); // Prevent the default form submission behavior
   
-    if (newPost.title && newPost.price && newPost.description && newPost.category) {
+    if (newPost.title && newPost.description && newPost.category) {
       const newPostData: PostData = { ...newPost, id: Date.now() };
       const updatedPosts = [...posts, newPostData];
   
@@ -71,13 +66,12 @@ const Post: React.FC = () => {
 
   return (
     <div>
-    <div className='create-post'>
-        <h1>Create Post</h1>
+    <div className='create-product'>
+        <h1>Create Product</h1>
       <form onSubmit={handleSubmit}>
-      <div>
-          <label htmlFor="title">Title:</label>
+        <div>
+          <label htmlFor="product-name">Title:</label>
           <input
-            type="text"
             id="title"
             name="title"
             value={newPost.title}
@@ -85,8 +79,8 @@ const Post: React.FC = () => {
           />
         </div>
         <div>
-           <label htmlFor="price">Price:</label>
-           <input
+          <label htmlFor="price">Price:</label>
+          <input
             id="price"
             name="price"
             value={newPost.price}
@@ -95,43 +89,16 @@ const Post: React.FC = () => {
         </div>
         <div>
           <label htmlFor="description">Description:</label>
-          <textarea
+          <input
             id="description"
             name="description"
             value={newPost.description}
             onChange={handleInputChange}
           />
         </div>
-        {/* <div>
-          <label htmlFor="userName">Username:</label>
-          <input
-            id="userName"
-            name="userName"
-            value={newPost.creator.userName}
-            onChange={handleInputChange}
-          />
-        </div> */}
-  
-        {/* <div className='radio-btn'>
-         <input type="radio" title='thread' id="THREAD" name="category" value="THREAD" checked={newPost.category === "THREAD"} onChange={handleInputChange} />
-        <label htmlFor="thread">THREAD</label><br /> 
-
-         <input type="radio" title='qna' id="QNA" name="category" value="QNA" checked={newPost.category === "QNA"} onChange={handleInputChange} />
-        <label htmlFor="qna">QNA</label><br /> 
-
-        </div> */}
-        {/* <div>
-         <label htmlFor="creationDate">Created at:</label> 
-          <input
-            id="creationDate"
-            name="creationDate"
-            value={newPost.creationDate}
-            onChange={handleInputChange}
-          />
-        </div> */}
-     
         <button id='cr8btn' type="submit">Create Product</button>
       </form>
+      
     </div>
       
     </div>

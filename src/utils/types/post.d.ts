@@ -10,8 +10,28 @@ interface PostData {
   creator: User;
 }
 
-interface QNAPost extends PostData {
-  category: "QNA";
-  isAnswered: boolean;
-  commentAnswerId?: number;
+interface Product {
+  id: number;
+  name: string;
+  price: number;
 }
+
+interface CartItem {
+  product: Product;
+  quantity: number;
+}
+
+interface CartState {
+  cartItems: CartItem[];
+}
+
+interface Action {
+  type: string;
+  payload?: any;
+}
+
+// interface QNAPost extends PostData {
+//   category: "QNA";
+//   isAnswered: boolean;
+//   commentAnswerId?: number;
+// }
