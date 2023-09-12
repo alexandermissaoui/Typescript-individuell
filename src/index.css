@@ -70,7 +70,7 @@ h1 {
 }
 
 .create-post {
-  background-color: ;
+  /* background-color: ; */
   display: flex;
   justify-content: center;
   flex-direction: column;
