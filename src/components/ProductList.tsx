@@ -10,18 +10,13 @@ const PostList = () => {
       <div>
         <div>
           {savedPosts.map(function(post){
-            console.log("POSTS", post.creator)
+            console.log("POSTS",)
             return(
               <div key={post.id} className="post" id="post" onClick={() =>{
                 navigate(`/post/${post.id}`)
                 }}>
                 <h3>{post.title}</h3>
                 <p>Price: {post.price}</p>
-                {/* <p>Description: {post.description}</p> */}
-                {/* <p>Product Image: {post.image}</p> */}
-                {/* <p>Creation Date: {post.creationDate}</p> */}
-                {/* <p>Creator name: {post.creator.name}</p> */}
-                {/* <p>Username: {post.creator.userName}</p> */}
               </div>
             )
           })}

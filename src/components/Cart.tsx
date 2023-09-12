@@ -22,14 +22,14 @@ const Cart: React.FC = () => {
 
   return (
     <div>
-      <h2>Kundvagn</h2>
+      <h2>Shopping Cart</h2>
       <ul>
         {state.cartItems.map(item => (
           <li key={item.product.id}>
-            {item.product.name} - {item.product.price} kr - Antal: {item.quantity}
+            {item.product.name} - {item.product.price} kr - Amount: {item.quantity}
             <button onClick={() => handleIncrementQuantity(item.product.id)}>+</button>
             <button onClick={() => handleDecrementQuantity(item.product.id)}>-</button>
-            <button onClick={() => handleRemoveFromCart(item.product.id)}>Ta bort</button>
+            <button onClick={() => handleRemoveFromCart(item.product.id)}>Remove</button>
           </li>
         ))}
       </ul>

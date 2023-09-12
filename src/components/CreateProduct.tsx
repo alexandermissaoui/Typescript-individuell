@@ -8,14 +8,8 @@ const Post: React.FC = () => {
     id: 0,
     title: '',
     price:'',
-    category: 'THREAD',
-    creationDate: '',
     description: '',
-    creator: {
-      id: 0,
-      name: '',
-      userName: '',
-    },
+
   });
 
   useEffect(() => {
@@ -35,7 +29,7 @@ const Post: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault(); // Prevent the default form submission behavior
   
-    if (newPost.title && newPost.description && newPost.category) {
+    if (newPost.title && newPost.description && newPost.price) {
       const newPostData: PostData = { ...newPost, id: Date.now() };
       const updatedPosts = [...posts, newPostData];
   
@@ -51,18 +45,10 @@ const Post: React.FC = () => {
         title: '',
         price: '',
         description: '',
-        category: 'THREAD', // Set a default category if needed
-        creationDate: '',
-        creator: {
-          id: 0,
-          name: '',
-          userName: '',
-        },
+   
       });
     }
   };
-  
-  
 
   return (
     <div>
