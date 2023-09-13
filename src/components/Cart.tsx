@@ -21,9 +21,9 @@ const Cart: React.FC = () => {
   };
 
   return (
-    <div>
-      <h2>Shopping Cart</h2>
+    <div className='cart'>
       <ul>
+      <h2>Shopping Cart</h2>
         {state.cartItems.map(item => (
           <li key={item.product.id}>
             {item.product.name} - {item.product.price} kr - Amount: {item.quantity}

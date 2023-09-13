@@ -197,5 +197,12 @@ h3 {
   text-align: center;
 }
 
+.cart{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 50px;
+}
+
 
 
