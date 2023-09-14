@@ -26,7 +26,7 @@ const Cart: React.FC = () => {
       <h2>Shopping Cart</h2>
         {state.cartItems.map(item => (
           <li key={item.product.id}>
-            {item.product.name} - {item.product.price} kr - Amount: {item.quantity}
+            {item.product.title} - {item.product.price} kr - Amount: {item.quantity}
             <button onClick={() => handleIncrementQuantity(item.product.id)}>+</button>
             <button onClick={() => handleDecrementQuantity(item.product.id)}>-</button>
             <button onClick={() => handleRemoveFromCart(item.product.id)}>Remove</button>
