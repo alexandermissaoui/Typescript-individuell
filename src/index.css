@@ -91,6 +91,10 @@ p {
   text-align: center
 }
 
+button {
+  margin-bottom: 20px;
+}
+
 /* button {
   background-color: rgb(109, 160, 169); 
   color: #000000; 
