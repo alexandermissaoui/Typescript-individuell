@@ -16,7 +16,7 @@ const PostList = () => {
                 navigate(`/post/${post.id}`)
                 }}>
                 <h3>{post.title}</h3>
-                <p>Price: {post.price}</p>
+                <p>Price: {post.price} kr</p>
               </div>
             )
           })}

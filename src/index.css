@@ -182,10 +182,10 @@ form {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: baseline;
-  width: 800px;
+  width: 600px;
   border: solid black 3px;
   margin: 30px;
-  margin-left: 300px;
+  margin-left: 275px;
   padding-left: 30px;
   background-color: white;
   font-size: large;
