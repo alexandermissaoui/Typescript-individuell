@@ -26,6 +26,9 @@ const Cart: React.FC = () => {
       <h2>Shopping Cart</h2>
         {state.cartItems.map(item => (
           <li key={item.product.id}>
+            <div>
+            <img src={item.product.imageUrl} className="img-fluid"  />
+            </div>
             {item.product.title} - {item.product.description} - {item.product.price} kr - Amount: {item.quantity}
             <div>
             <button onClick={() => handleIncrementQuantity(item.product.id)}>+</button>

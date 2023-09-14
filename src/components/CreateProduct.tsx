@@ -9,6 +9,7 @@ const Post: React.FC = () => {
     title: '',
     price:'',
     description: '',
+    imageUrl:'',
 
   });
 
@@ -29,7 +30,7 @@ const Post: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault(); // Prevent the default form submission behavior
   
-    if (newPost.title && newPost.description && newPost.price) {
+    if (newPost.title && newPost.description && newPost.price && newPost.imageUrl ) {
       const newPostData: PostData = { ...newPost, id: Date.now() };
       const updatedPosts = [...posts, newPostData];
   
@@ -45,6 +46,7 @@ const Post: React.FC = () => {
         title: '',
         price: '',
         description: '',
+        imageUrl: '',
    
       });
     }
@@ -54,7 +56,18 @@ const Post: React.FC = () => {
     <div>
     <div className='create-product'>
         <h1>Create Product</h1>
+
       <form onSubmit={handleSubmit}>
+      <div>
+          <label htmlFor="imageUrl">Image Url</label>
+          <input
+            id="imageUrl"
+            name="imageUrl"
+            value={newPost.imageUrl}
+            onChange={handleInputChange}
+          />
+        </div>
+
         <div>
           <label htmlFor="product-name">Title:</label>
           <input

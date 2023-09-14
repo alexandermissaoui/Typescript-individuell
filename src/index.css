@@ -53,21 +53,21 @@ h1 {
   right: 50px;
   background-color: white;
 }
-#Searchbar {
+/* #Searchbar {
   height: 50px;
   width: 500px;
   margin-top: 7px;
   border-radius: 3%;
   font-size: large;
-}
+} */
 
-#img{
+/* #img{
   height: 40px;
   width: 40px;
   margin-top: 15px;
   position: relative;
   right: 650px;
-}
+} */
 
 .create-post {
   /* background-color: ; */
@@ -107,14 +107,14 @@ button {
   transform: translate(-50%, -50%);
 } */
 
-.radio-btn{
+/* .radio-btn{
   display: flex;
   flex-direction: row;
 }
 #QNA, #THREAD {
   height: 15px;
   width: 90px;
-}
+} */
 
 #cr8btn {
   background-color: white; 
@@ -204,6 +204,12 @@ h3 {
   display: flex;
   justify-content: center;
   /* align-items: center; */
+  margin-top: 10px;
+}
+
+img{
+  width: 270px;
+  height: 295px;
   margin-top: 10px;
 }
 

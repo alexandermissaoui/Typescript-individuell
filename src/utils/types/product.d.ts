@@ -4,6 +4,7 @@ interface PostData {
   title: string;
   price: string;
   description: string;
+  imageUrl: string;
 }
 
 interface Product {
@@ -11,6 +12,8 @@ interface Product {
   title: string;
   price: number;
   description: string;
+  imageUrl: string;
+
 }
 
 interface CartItem {

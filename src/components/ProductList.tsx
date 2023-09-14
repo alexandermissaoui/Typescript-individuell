@@ -15,8 +15,10 @@ const PostList = () => {
               <div key={post.id} className="post" id="post" onClick={() =>{
                 navigate(`/post/${post.id}`)
                 }}>
+                <img src={post.imageUrl} className="img-fluid"  />
                 <h3>{post.title}</h3>
                 <p>Price: {post.price} kr</p>
+              
               </div>
             )
           })}

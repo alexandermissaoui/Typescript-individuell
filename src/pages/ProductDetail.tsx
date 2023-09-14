@@ -37,7 +37,8 @@ const ThreadDetailView = () => {
   return (
     <div>
       
-    <div className='post' id='post' key={post.id}>  
+    <div className='post' id='post' key={post.id}> 
+                <img src={post.imageUrl} className="img-fluid"  /> 
                 <h3>{post.title}</h3>
                 <p>Price: {post.price} kr</p>
                 <p>Description: {post.description}</p>
