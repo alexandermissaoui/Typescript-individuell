@@ -55,7 +55,7 @@ const Post: React.FC = () => {
   return (
     <div>
     <div className='create-product'>
-        <h1>Create Product</h1>
+        <h1>Publish Car For Sale</h1>
 
       <form onSubmit={handleSubmit}>
       <div>
